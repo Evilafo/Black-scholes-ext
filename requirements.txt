@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+pandas
+yfinance
+streamlit
+ipywidgets
+tenacity
