@@ -47,9 +47,9 @@ call_prices = [black_scholes_call(S_val, K, r, sigma, T) for S_val in S_values]
 put_prices = [black_scholes_put(S_val, K, r, sigma, T) for S_val in S_values]
 
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.plot(S_values, call_prices, label="Call Price", color="blue")
-ax.plot(S_values, put_prices, label="Put Price", color="red")
-ax.axvline(K, linestyle="--", color="black", label="Strike Price")
+ax.plot(S_values, call_prices, label="Prix du Call", color="blue")
+ax.plot(S_values, put_prices, label="Prix du Put", color="red")
+ax.axvline(K, linestyle="--", color="black", label="Prix du Strike (L'exercice)")
 ax.set_title("Prix des options en fonction du prix de l'actif sous-jacent")
 ax.set_xlabel("Prix de l'actif sous-jacent (S)")
 ax.set_ylabel("Prix de l'option")
